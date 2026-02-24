@@ -1,13 +1,31 @@
+import Link from "next/link";
+
 import Navbar from "./components/Navbar";
+import PageHeader from "./components/PageHeader";
 
 export default function Home() {
   return (
     <>
-      <div className="flex flex-col gap-3">
+      <div className="flex flex-col gap-2">
         <Navbar />
-        
-        <div className="text-center bg-white p-2">
-          <text className="text-lg text-black">Home</text>
+        <PageHeader title="Home" />
+
+        <div className="container-fluid flex flex-row mt-3">
+          <div className="container w-50 flex flex-col rounded p-3 gap-2">
+            <Link href="/join-room">
+              <div className="container w-full p-3 bg-white text-black rounded">
+                Join a room
+              </div>
+            </Link>
+            <Link href="/create-room">
+              <div className="container w-full p-3 bg-white text-black rounded">
+                Create a room
+              </div>
+            </Link>
+          </div>
+          <div className="conatiner-fluid p-3">
+            
+          </div>
         </div>
       </div>
     </>

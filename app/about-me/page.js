@@ -1,14 +1,12 @@
-import Navbar from "../components/Navbar"
+import Navbar from "../components/Navbar";
+import PageHeader from "../components/PageHeader";
 
 export default function AboutMe(){
     return(
         <>
-            <div className="flex flex-col gap-3">
+            <div className="flex flex-col gap-2">
                 <Navbar />
-
-                <div className="container-fluid bg-white p-2 text-center">
-                    <text className="text-lg text-black">About Me</text>
-                </div>
+                <PageHeader title="About Me" />
             </div>
         </>
     )

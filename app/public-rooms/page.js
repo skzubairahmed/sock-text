@@ -1,14 +1,12 @@
-import Navbar from "../components/Navbar"
+import Navbar from "../components/Navbar";
+import PageHeader from "../components/PageHeader";
 
 export default function PublicRooms(){
     return(
         <>
-            <div className="flex flex-col gap-3">
+            <div className="flex flex-col gap-2">
                 <Navbar />
-
-                <div className="container-fluid bg-white p-2 text-center">
-                    <text className="text-lg text-black">Public Rooms</text>
-                </div>
+                <PageHeader title="Public Rooms" />
             </div>
         </>
     )
