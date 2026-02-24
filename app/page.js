@@ -1,14 +1,13 @@
-import Link from "next/link";
+import Navbar from "./components/Navbar";
 
 export default function Home() {
   return (
     <>
-      <div className="container-fluid p-2 bg-white flex flex-row gap-3 content-center">
-        <h1 className="text text-black">SockText</h1>
-        <div className="flex text-center flex-row gap-3">
-          <Link href="/"><h1 className="text text-black">Home</h1></Link>
-          <Link href="/public-rooms"><h1 className="text text-black">Rooms</h1></Link>
-          <Link href="/about-me"><h1 className="text text-black">About</h1></Link>
+      <div className="flex flex-col gap-3">
+        <Navbar />
+        
+        <div className="text-center bg-white p-2">
+          <text className="text-lg text-black">Home</text>
         </div>
       </div>
     </>
