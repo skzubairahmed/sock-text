@@ -10,7 +10,7 @@ export default function Home() {
         <Navbar />
         <PageHeader title="Home" />
 
-        <div className="container-fluid flex flex-row mt-3">
+        <div className="container w-fit ml-2 p-3 rounded bg-slate-600 flex flex-row mt-3">
           <div className="container w-50 flex flex-col rounded p-3 gap-2">
             <Link href="/join-room">
               <div className="container w-full p-3 bg-white text-black rounded">

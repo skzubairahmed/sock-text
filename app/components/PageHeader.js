@@ -1,7 +1,7 @@
 export default function PageHeader({title}){
     return(
-        <div className="bg-white p-1 text-center">
-            <text className="text-lg text-black">{title}</text>
+        <div className=" container m-auto w-fit rounded p-1 text-center bg-slate-600">
+            <text className="text-lg p-5 text-white">{title}</text>
         </div>
     )
 }
